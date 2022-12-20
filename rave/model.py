@@ -494,8 +494,8 @@ class RAVE(pl.LightningModule):
         gen_p += list(self.decoder.parameters())
         dis_p = list(self.discriminator.parameters())
 
-        gen_opt = torch.optim.Adam(gen_p, 1e-4, (.5, .9))
-        dis_opt = torch.optim.Adam(dis_p, 1e-4, (.5, .9))
+        gen_opt = torch.optim.Adam(gen_p, 3e-4, (.5, .9))
+        dis_opt = torch.optim.Adam(dis_p, 3e-4, (.5, .9))
 
         return gen_opt, dis_opt
 
