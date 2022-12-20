@@ -47,7 +47,7 @@ if __name__ == "__main__":
         D_MULTIPLIER = 4
         D_N_LAYERS = 4
 
-        WARMUP = setting(default=1000000, small=1000000, large=3000000)
+        WARMUP = setting(default=500000, small=250000, large=1000000)
         MODE = "hinge"
         CKPT = None
 
@@ -55,7 +55,7 @@ if __name__ == "__main__":
         WAV = None
         SR = 48000
         N_SIGNAL = 65536
-        MAX_STEPS = setting(default=3000000, small=3000000, large=6000000)
+        MAX_STEPS = setting(default=1000000, small=500000, large=2000000)
         VAL_EVERY = 10000
 
         BATCH = 8
