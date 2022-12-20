@@ -1,3 +1,22 @@
+nvidia-smi
+
+conda create -n rave python=3.9
+source activate rave
+
+git clone https://github.com/acids-ircam/RAVE
+cd RAVE
+pip install -r requirements.txt
+conda install pytorch torchvision torchaudio pytorch-cuda=11.7 -c pytorch -c nvidia
+
+apt-get install ffmpeg
+
+python cli_helper.py
+
+
+
+
+
+
 ![rave_logo](docs/rave.png)
 
 # RAVE: Realtime Audio Variational autoEncoder
