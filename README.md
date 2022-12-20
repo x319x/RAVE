@@ -3,7 +3,7 @@ nvidia-smi
 conda create -n rave python=3.9
 source activate rave
 
-git clone https://github.com/acids-ircam/RAVE
+git clone https://github.com/x319x/RAVE
 cd RAVE
 pip install -r requirements.txt
 conda install pytorch torchvision torchaudio pytorch-cuda=11.7 -c pytorch -c nvidia
