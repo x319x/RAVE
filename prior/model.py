@@ -63,7 +63,7 @@ class Model(pl.LightningModule):
         p.extend(list(self.pre_net.parameters()))
         p.extend(list(self.residuals.parameters()))
         p.extend(list(self.post_net.parameters()))
-        return torch.optim.Adam(p, lr=1e-4)
+        return torch.optim.Adam(p, lr=3e-4)
 
     @torch.no_grad()
     def encode(self, x):
